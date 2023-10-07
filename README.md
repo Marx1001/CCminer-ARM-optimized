@@ -4,6 +4,8 @@ Based on https://github.com/monkins1010/ccminer/tree/ARM
 
 Git and Build Process:
 ```bash
+sudo apt-get update
+sudo apt-get upgrade
 sudo apt-get install software-properties-common
 wget https://apt.llvm.org/llvm.sh
 chmod +x llvm.sh
