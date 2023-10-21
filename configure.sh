@@ -22,9 +22,9 @@ if [[ "$arch" == "aarch64" ]]; then
     elif [[ "$model_name" == *"Cortex-A75"* ]]; then
         cpu_flags="-march=armv8-a+crypto -mtune=cortex-a75"
     elif [[ "$model_name" == *"Cortex-A76"* ]]; then
-        cpu_flags="-march=armv8-a+crypto -mtune=cortex-a76"
+        cpu_flags="-march=armv8-a+crypto -mtune=cortex-a55"
     elif [[ "$model_name" == *"Cortex-A77"* ]]; then
-        cpu_flags="-march=armv8-a+crypto -mtune=cortex-a77"
+        cpu_flags="-march=armv8-a+crypto -mtune=cortex-a55"
     elif [[ "$model_name" == *"Cortex-A78c"* ]]; then
         cpu_flags="-march=armv8-a+crypto -mtune=cortex-a78c"
     elif [[ "$model_name" == *"Cortex-A78"* ]]; then
