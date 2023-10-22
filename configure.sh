@@ -22,17 +22,17 @@ if [[ "$arch" == "aarch64" ]]; then
     elif [[ "$model_name" == *"Cortex-A75"* ]]; then
         cpu_flags="-march=armv8-a+crypto -mtune=cortex-a75"
     elif [[ "$model_name" == *"Cortex-A76"* ]]; then
-        cpu_flags="-march=armv8-a+crypto -mtune=cortex-a55"
+        cpu_flags="-march=armv8-a+crypto -mtune=cortex-a76"
     elif [[ "$model_name" == *"Cortex-A77"* ]]; then
-        cpu_flags="-march=armv8-a+crypto -mtune=cortex-a55"
+        cpu_flags="-march=armv8-a+crypto -mtune=cortex-a77"
     elif [[ "$model_name" == *"Cortex-A78c"* ]]; then
         cpu_flags="-march=armv8-a+crypto -mtune=cortex-a78c"
     elif [[ "$model_name" == *"Cortex-A78"* ]]; then
         cpu_flags="-march=armv8-a+crypto -mtune=cortex-a78"
     else
-        # Default to ARMv8-A architecture (Cortex-A53) if unknown
+        # Default to ARMv8-A architecture (Cortex-A55) if unknown
         echo "Unknown or unsupported model: $model_name. Defaulting to ARMv8-A."
-        cpu_flags="-march=armv8-a+crypto -mtune=cortex-a53"
+        cpu_flags="-march=armv8-a+crypto -mtune=cortex-a55"
     fi
 else
     # Default to ARMv8-A architecture (Cortex-A53) if unknown architecture
