@@ -28,16 +28,4 @@ CXX=clang++ CC=clang ./build.sh
 nano run
 chmod +x run
 ```
-Git and Build Process for Termux:
-```bash
-pkg update -y
-pkg upgrade -y
-pkg install openssl libjansson automake build-essential clang lld curl git binutils
-git clone https://github.com/Marx1001/CCminer-ARM-optimized.git
-cp /data/data/com.termux/files/usr/include/linux/sysctl.h /data/data/com.termux/files/usr/include/sys
-cd CCminer-ARM-optimized
-chmod +x build.sh
-chmod +x configure.sh
-chmod +x autogen.sh
-CXX=clang++ CC=clang ./build.sh
-```
+
